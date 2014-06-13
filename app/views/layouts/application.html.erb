@@ -21,7 +21,12 @@
 </div>
 
 <div class="container">
-		<%= yield %>
+	 <p class="notice"><%= notice %></p>
+     <p class="alert"><%= alert %></p>
+     <%= link_to "Sign out", destroy_user_session_path , :method=>:delete %>
+     <%= yield %>
+
+
 </div>
 
 </body>
